@@ -1,0 +1,128 @@
+*{margin: 0;padding: 0;box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+.header {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,1,210,1) 27%, rgba(0,212,255,1) 100%);
+    padding: 3em 0;
+    color: white;
+
+    h1{
+        font-size: clamp(1rem, 1rem + 10vw, 4rem);
+        line-height: .9em;
+        padding-bottom: .5em;
+    }
+
+    p{
+        font-size:clamp(1rem, 1rem + 10vw, 1.8em);
+    }
+}
+
+.wrapper {
+
+    max-width: 70%;
+    margin-inline: auto;
+    box-shadow:
+    4px 2.5px 3.6px rgba(0, 0, 0, 0.29),
+    11.1px 6.9px 10px rgba(0, 0, 0, 0.213),
+    26.8px 16.6px 24.1px rgba(0, 0, 0, 0.184),
+    89px 55px 80px rgba(0, 0, 0, 0.147)
+    ;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 6em;
+    background-color: rgb(190, 190, 190);
+
+    .filter {
+        // background-color: aquamarine;
+        padding: 2em;
+        // margin-top: 2em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        h1{
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding-right: 1em;
+        }
+
+        .filterSearch {
+            padding: .7em;
+            border-radius: 1em;
+            width: 15rem;
+        }
+    }
+
+    .inner-wrapper {
+        
+
+        .inputSection {
+            margin-top: 1em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 2em;
+            
+            .inputText {
+                padding: .7em;
+                border-radius: 1em;
+                width: 18rem;
+                font-size: 1rem;
+            }
+
+            .submit {
+                padding: .2em 2em;
+                border-radius: .4em;
+                cursor: pointer;
+                background-color: chartreuse;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+
+                &:hover {
+                    background-color: rgb(47, 100, 0);
+                    color: white;
+                }
+            }
+        }
+
+        .listItems {
+
+            .list-group {
+                align-items: center;
+                background-color: rgb(255, 255, 255);
+                padding: .6em 1em;
+                font-size: 1.1rem;
+                border-radius: .3em;
+                margin-bottom: .4em;
+
+                .btnRemove {
+
+                    background: rgb(255, 38, 38);
+                    padding: .1em .4em;
+                    border-radius: .4em;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                    font-size: 1rem;
+                    float: right;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: rgb(172, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+
+}
