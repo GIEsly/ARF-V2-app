@@ -15,19 +15,19 @@ body {
     color: white;
 
     h1{
-        font-size: clamp(1rem, 1rem + 10vw, 4rem);
+        font-size: clamp(.6rem, 1rem + 10vw, 2rem);
         line-height: .9em;
-        padding-bottom: .5em;
+        padding-bottom: .4em;
     }
 
     p{
-        font-size:clamp(1rem, 1rem + 10vw, 1.8em);
+        font-size:clamp(.4rem, 1rem + 10vw, 1em);
     }
 }
 
 .wrapper {
 
-    max-width: 70%;
+    max-width: 80%;
     margin-inline: auto;
     box-shadow:
     4px 2.5px 3.6px rgba(0, 0, 0, 0.29),
@@ -35,29 +35,32 @@ body {
     26.8px 16.6px 24.1px rgba(0, 0, 0, 0.184),
     89px 55px 80px rgba(0, 0, 0, 0.147)
     ;
-    padding: 1em;
+
+    padding: .4em;
     border-radius: 1em;
     margin-top: 6em;
     background-color: rgb(190, 190, 190);
 
     .filter {
         // background-color: aquamarine;
-        padding: 2em;
+        padding: 1em;
         // margin-top: 2em;
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
         h1{
-            font-size: 1rem;
+            font-size: .7rem;
             text-transform: uppercase;
+            align-items: center;
+            text-align: center;
             padding-right: 1em;
         }
 
         .filterSearch {
-            padding: .7em;
+            padding: .5em;
             border-radius: 1em;
-            width: 15rem;
+            width: 9rem;
         }
     }
 
@@ -67,26 +70,26 @@ body {
         .inputSection {
             margin-top: 1em;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center`;
             align-items: center;
             gap: 1em;
             margin-bottom: 2em;
             
             .inputText {
-                padding: .7em;
+                padding: .5em;
                 border-radius: 1em;
-                width: 18rem;
+                width: 10rem;
                 font-size: 1rem;
             }
 
             .submit {
-                padding: .2em 2em;
+                padding: .2em .5em;
                 border-radius: .4em;
                 cursor: pointer;
                 background-color: chartreuse;
                 font-weight: bold;
                 text-transform: uppercase;
-                font-size: 1.2rem;
+                font-size: 1rem;
 
                 &:hover {
                     background-color: rgb(47, 100, 0);

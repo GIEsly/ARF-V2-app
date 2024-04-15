@@ -22,26 +22,26 @@ body {
   color: white;
 }
 .header h1 {
-  font-size: clamp(1rem, 1rem + 10vw, 4rem);
+  font-size: clamp(0.6rem, 1rem + 10vw, 2rem);
   line-height: 0.9em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.4em;
 }
 .header p {
-  font-size: clamp(1rem, 1rem + 10vw, 1.8em);
+  font-size: clamp(0.4rem, 1rem + 10vw, 1em);
 }
 
 .wrapper {
-  max-width: 70%;
+  max-width: 80%;
   margin-inline: auto;
   -webkit-box-shadow: 4px 2.5px 3.6px rgba(0, 0, 0, 0.29), 11.1px 6.9px 10px rgba(0, 0, 0, 0.213), 26.8px 16.6px 24.1px rgba(0, 0, 0, 0.184), 89px 55px 80px rgba(0, 0, 0, 0.147);
           box-shadow: 4px 2.5px 3.6px rgba(0, 0, 0, 0.29), 11.1px 6.9px 10px rgba(0, 0, 0, 0.213), 26.8px 16.6px 24.1px rgba(0, 0, 0, 0.184), 89px 55px 80px rgba(0, 0, 0, 0.147);
-  padding: 1em;
+  padding: 0.4em;
   border-radius: 1em;
   margin-top: 6em;
   background-color: rgb(190, 190, 190);
 }
 .wrapper .filter {
-  padding: 2em;
+  padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,23 +53,27 @@ body {
           align-items: center;
 }
 .wrapper .filter h1 {
-  font-size: 1rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   padding-right: 1em;
 }
 .wrapper .filter .filterSearch {
-  padding: 0.7em;
+  padding: 0.5em;
   border-radius: 1em;
-  width: 15rem;
+  width: 9rem;
 }
 .wrapper .inner-wrapper .inputSection {
   margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -77,19 +81,19 @@ body {
   margin-bottom: 2em;
 }
 .wrapper .inner-wrapper .inputSection .inputText {
-  padding: 0.7em;
+  padding: 0.5em;
   border-radius: 1em;
-  width: 18rem;
+  width: 10rem;
   font-size: 1rem;
 }
 .wrapper .inner-wrapper .inputSection .submit {
-  padding: 0.2em 2em;
+  padding: 0.2em 0.5em;
   border-radius: 0.4em;
   cursor: pointer;
   background-color: chartreuse;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .wrapper .inner-wrapper .inputSection .submit:hover {
   background-color: rgb(47, 100, 0);
